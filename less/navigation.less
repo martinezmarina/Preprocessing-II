@@ -1,1 +1,42 @@
 // Navigation Styles here
+
+    .title{
+        border-bottom: 2px dashed @navigation-border;
+        .flexin(row, space-between, center);
+        padding:3% 0;
+        @media @mobile{
+            .flexin(column, space-evenly, center);
+            flex-wrap: wrap;
+            width:100%;
+        }
+        nav{
+            width:50%;
+            .flexin(row, space-between, center);
+            @media @mobile{
+                width:100%;
+            }
+            a{
+            font-family: 'Roboto', sans-serif;
+            font-size:1.6rem; 
+            color:@shark;
+            text-decoration: none;
+            padding:0 3%;
+
+            }
+        }
+    }
+
+    .image{
+        margin-bottom: 3%;
+        @media @mobile{
+            margin:0 5%;
+        }
+    }
+
+    .aboutContent{
+        width:100%;
+        @media @mobile{
+            padding:3% 5%;
+
+        }
+    }
